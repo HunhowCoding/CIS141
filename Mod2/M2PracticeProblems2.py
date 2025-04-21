@@ -1,4 +1,7 @@
 # provides inputtable values to calculate
+# also provide note about what to NOT type down
+print("Simple Calculator! Input 2 values for them to be added, subtracted, multiplied, and divided.")
+print("NOTE: Do not set the second value to zero, this will crash the program!")
 value1 = float(input("first value: "))
 value2 = float(input("second value: "))
 
@@ -6,12 +9,7 @@ value2 = float(input("second value: "))
 add = value1 + value2
 sub = value1 - value2
 mult = value1 * value2
-
-# division with additional stuff to prevent /0
-if value2 !=0:
-    div = value1 / value2
-else:
-    div = "undifined, divided by zero"
+div = value1 / value2
 
 # print results
 print(f"addition: {add}")
